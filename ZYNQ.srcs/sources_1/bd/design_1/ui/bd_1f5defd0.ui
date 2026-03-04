@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.09844",
+   "Default View_TopLeft":"-114,-625",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1770 -y -370 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1770 -y -340 -defaultsOSRD
+preplace port Vp_Vn_0 -pg 1 -lvl 0 -x -10 -y -290 -defaultsOSRD
+preplace port port-id_reset_rtl -pg 1 -lvl 0 -x -10 -y -70 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1180 -y -320 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -x 160 -y -270 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 790 -y -60 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 790 -y -310 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 2 -x 460 -y -310 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -x 1570 -y -310 -defaultsOSRD
+preplace inst rst_clk_wiz_0_104M -pg 1 -lvl 4 -x 1180 -y -90 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -x 1570 -y -120 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 2 3 630 20 NJ 20 1400
+preplace netloc clk_wiz_0_clk_out1 1 0 5 20 -410 310 -390 620 -410 960 -200 1420
+preplace netloc clk_wiz_0_locked 1 3 1 N -50
+preplace netloc rst_clk_wiz_0_104M_peripheral_aresetn 1 0 5 30 -400 290J -230 630 -210 NJ -210 1430
+preplace netloc reset_rtl_1 1 0 3 NJ -70 NJ -70 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 2 970 10 1390
+preplace netloc processing_system7_0_DDR 1 4 2 1390J -400 1750
+preplace netloc processing_system7_0_FIXED_IO 1 4 2 1420J -390 1740
+preplace netloc Vp_Vn_0_1 1 0 1 N -290
+preplace netloc axis_subset_converter_0_M_AXIS 1 2 1 610 -330n
+preplace netloc xadc_wiz_0_M_AXIS 1 1 1 300 -340n
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 1 1390 -330n
+preplace netloc axi_smc_M00_AXI 1 2 4 630 -440 NJ -440 NJ -440 1710
+preplace netloc axi_smc_M01_AXI 1 0 6 10 -430 NJ -430 NJ -430 NJ -430 NJ -430 1720
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 2 950J -190 1410
+preplace netloc axi_mem_intercon_M00_AXI 1 3 3 970 -450 NJ -450 1730
+levelinfo -pg 1 -10 160 460 790 1180 1570 1770
+pagesize -pg 1 -db -bbox -sgen -780 -460 1880 770
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_board_cnt":"3",
+   "da_ps7_cnt":"1"
+}
