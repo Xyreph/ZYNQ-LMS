@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA0802237485520C9",
+      "boundary_crc": "0x48B50625C7F03B6D",
       "device": "xc7z007sclg400-1",
       "gen_directory": "../../../../ZYNQ.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -224,21 +224,6 @@
           "V_P": {
             "physical_name": "Vp_Vn_0_v_p",
             "direction": "I"
-          }
-        }
-      }
-    },
-    "ports": {
-      "reset_rtl": {
-        "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_HIGH"
           }
         }
       }
@@ -2106,12 +2091,6 @@
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "rst_clk_wiz_0_104M/ext_reset_in"
-        ]
-      },
-      "reset_rtl_1": {
-        "ports": [
-          "reset_rtl",
-          "clk_wiz_0/reset"
         ]
       },
       "rst_clk_wiz_0_104M_peripheral_aresetn": {

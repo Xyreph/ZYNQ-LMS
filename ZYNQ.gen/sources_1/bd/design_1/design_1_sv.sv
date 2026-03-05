@@ -98,9 +98,7 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   input wire Vp_Vn_0_v_n,
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire Vp_Vn_0_v_p,
-  (* X_INTERFACE_IGNORE = "true" *)
-  input wire reset_rtl
+  input wire Vp_Vn_0_v_p
 );
 
   design_1 inst (
@@ -126,8 +124,7 @@ module design_1_sv (
     .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
     .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
     .Vp_Vn_0_v_n(Vp_Vn_0_v_n),
-    .Vp_Vn_0_v_p(Vp_Vn_0_v_p),
-    .reset_rtl(reset_rtl)
+    .Vp_Vn_0_v_p(Vp_Vn_0_v_p)
   );
 
 endmodule

@@ -75,8 +75,7 @@ COMPONENT design_1
     FIXED_IO_ps_clk : INOUT STD_LOGIC;
     FIXED_IO_ps_porb : INOUT STD_LOGIC;
     Vp_Vn_0_v_n : IN STD_LOGIC;
-    Vp_Vn_0_v_p : IN STD_LOGIC;
-    reset_rtl : IN STD_LOGIC
+    Vp_Vn_0_v_p : IN STD_LOGIC
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -109,8 +108,7 @@ your_instance_name : design_1
     FIXED_IO_ps_clk => FIXED_IO_ps_clk,
     FIXED_IO_ps_porb => FIXED_IO_ps_porb,
     Vp_Vn_0_v_n => Vp_Vn_0_v_n,
-    Vp_Vn_0_v_p => Vp_Vn_0_v_p,
-    reset_rtl => reset_rtl
+    Vp_Vn_0_v_p => Vp_Vn_0_v_p
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 
