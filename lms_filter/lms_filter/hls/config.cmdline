@@ -1,0 +1,3 @@
+relativeroot=D:/VHDl/ZYNQ/lms_filter
+original_argv=--mode hls --package --config D:\VHDl\ZYNQ\lms_filter\hls_config.cfg --work_dir lms_filter 
+

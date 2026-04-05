@@ -1,0 +1,32 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir D:/VHDl/ZYNQ/lms_filter/lms_filter 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/VHDl/ZYNQ/lms_filter/lms_filter/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/VHDl/ZYNQ/lms_filter/lms_filter'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../lms_filter.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/VHDl/ZYNQ/lms_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../lms_filter.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/VHDl/ZYNQ/lms_filter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../lms_filter_tb.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/VHDl/ZYNQ/lms_filter_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=lms_filter.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z007sclg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/VHDl/ZYNQ/lms_filter/lms_filter/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.221 seconds; current allocated memory: 134.242 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../lms_filter.cpp' ... 
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (:0)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.76 seconds; current allocated memory: 136.496 MB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'lms_filter.cpp'
+error: Top function not found: there is no function named 'lms_filter.cpp'
+ERROR: Error in opt
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.689 seconds; peak allocated memory: 136.805 MB.

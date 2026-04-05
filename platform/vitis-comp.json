@@ -3,7 +3,7 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/design_1_wrapper.xsa",
+    "xsa": "D:/VHDl/ZYNQ/design_1_wrapper.xsa",
     "xsaPathInPlatform": "platform/hw/design_1_wrapper.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",

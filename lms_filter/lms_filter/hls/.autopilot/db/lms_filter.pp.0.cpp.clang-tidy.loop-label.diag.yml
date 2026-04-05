@@ -1,0 +1,88 @@
+---
+MainSourceFile:  'D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/.autopilot/db/lms_filter.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          280142
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          280613
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          281085
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          626488
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_32_1:  '
+      FilePath:        'D:\VHDl\ZYNQ\lms_filter.cpp'
+      FileOffset:      32
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          2259986
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_32_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_2:  '
+      FilePath:        'D:\VHDl\ZYNQ\lms_filter.cpp'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          2260146
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_48_3:  '
+      FilePath:        'D:\VHDl\ZYNQ\lms_filter.cpp'
+      FileOffset:      48
+      Replacements:
+        - FilePath:        'D:\VHDl\ZYNQ\lms_filter\lms_filter\hls\.autopilot\db\lms_filter.pp.0.cpp'
+          Offset:          2260288
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_48_3: '
+    Level:           Remark
+    BuildDirectory:  'D:\VHDl\ZYNQ\lms_filter'
+...

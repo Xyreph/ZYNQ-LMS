@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "D:/VHDl\\ZYNQ\\lms_filter\\lms_filter\\lms_filter.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "04/05/26 14:56:27",
+ "timestampMillis": "1775397387671",
+ "buildStep": {
+  "cmdId": "8ea79de5-0095-48df-9c03-47dc82fc92eb",
+  "name": "vitis-run",
+  "logFile": "D:/VHDl\\ZYNQ\\lms_filter\\lms_filter\\logs\\lms_filter.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\VHDl\\ZYNQ\\lms_filter\\hls_config.cfg --work_dir lms_filter ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\VHDl\\ZYNQ\\lms_filter\\hls_config.cfg",
+   "--work_dir",
+   "lms_filter"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\VHDl\\ZYNQ\\lms_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 14:56:27",
+ "timestampMillis": "1775397387671",
+ "status": {
+  "cmdId": "8ea79de5-0095-48df-9c03-47dc82fc92eb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "04/05/26 14:56:32",
+ "timestampMillis": "1775397392349",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/VHDl\\ZYNQ\\lms_filter.cpp",
+     "D:/VHDl\\ZYNQ\\lms_filter.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "04/05/26 14:56:32",
+ "timestampMillis": "1775397392349",
+ "buildStep": {
+  "cmdId": "cdf0e4a4-2e9c-4b86-ad06-019cc732f28f",
+  "name": "",
+  "logFile": "D:/VHDl\\ZYNQ\\lms_filter\\lms_filter\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\VHDl\\ZYNQ\\lms_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 14:56:32",
+ "timestampMillis": "1775397392350",
+ "status": {
+  "cmdId": "cdf0e4a4-2e9c-4b86-ad06-019cc732f28f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 14:56:38",
+ "timestampMillis": "1775397398979",
+ "status": {
+  "cmdId": "cdf0e4a4-2e9c-4b86-ad06-019cc732f28f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/05/26 14:56:39",
+ "timestampMillis": "1775397399084",
+ "status": {
+  "cmdId": "8ea79de5-0095-48df-9c03-47dc82fc92eb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/05/26 14:56:39",
+ "timestampMillis": "1775397399084",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/05/26 14:56:39",
+ "timestampMillis": "1775397399084",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

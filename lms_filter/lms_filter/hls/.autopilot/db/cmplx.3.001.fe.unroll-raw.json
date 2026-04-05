@@ -1,0 +1,22 @@
+{
+  "0": {
+    "basicblocks": 18,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "lms_filter.cpp",
+    "fileloc": 12,
+    "instructions": 235,
+    "loads": {
+      "G": 5,
+      "L": 9
+    },
+    "memory_accesses": 7,
+    "name": "lms_filter",
+    "stores": {
+      "G": 3,
+      "L": 7
+    },
+    "total_instructions": 247
+  }
+}

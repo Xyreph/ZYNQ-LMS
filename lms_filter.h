@@ -4,13 +4,30 @@
 #ifndef LMS_FILTER_H
 #define LMS_FILTER_H
 
+#include <ap_int.h>
+#include <hls_stream.h>
+#include <ap_axi_sdata.h>
+
+typedef ap_axiu<8,0,0,0> axis8_t;
+typedef ap_axiu<32,0,0,0> axis32_t;
+
+/*struct axis8_t{                 // assign axis8_t to a struct to read
+    ap_uint<8> data;            // from axis ports
+    ap_uint<1> last;
+};
+
+struct axis32_t{                 // assign axis8_t to a struct to read
+    ap_uint<32> data;            // from axis ports
+    ap_uint<1> last;
+};*/
+
 #define N_TAPS 16
 #define MU     0.01f
 
 void lms_filter(
-    float x_in,
-    float d_in,
-    float *e_out
+    hls::stream<axis8_t> &x_in,
+    hls::stream<axis8_t> &d_in,
+    hls::stream<axis32_t> &e_out
 );
 
 #endif
