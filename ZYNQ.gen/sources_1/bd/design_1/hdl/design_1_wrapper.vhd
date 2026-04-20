@@ -2,8 +2,8 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
---Date        : Wed Mar  4 13:59:59 2026
---Host        : BLACK running 64-bit major release  (build 9200)
+--Date        : Mon Apr 20 13:21:03 2026
+--Host        : Parvis running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -36,7 +36,11 @@ entity design_1_wrapper is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     Vp_Vn_0_v_n : in STD_LOGIC;
-    Vp_Vn_0_v_p : in STD_LOGIC
+    Vp_Vn_0_v_p : in STD_LOGIC;
+    clk_out1_0 : out STD_LOGIC;
+    inverted_out : out STD_LOGIC;
+    noise_out : out STD_LOGIC;
+    reset_0 : in STD_LOGIC
   );
 end design_1_wrapper;
 
@@ -65,7 +69,11 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     Vp_Vn_0_v_n : in STD_LOGIC;
-    Vp_Vn_0_v_p : in STD_LOGIC
+    Vp_Vn_0_v_p : in STD_LOGIC;
+    reset_0 : in STD_LOGIC;
+    clk_out1_0 : out STD_LOGIC;
+    noise_out : out STD_LOGIC;
+    inverted_out : out STD_LOGIC
   );
   end component design_1;
 begin
@@ -93,6 +101,10 @@ design_1_i: component design_1
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       Vp_Vn_0_v_n => Vp_Vn_0_v_n,
-      Vp_Vn_0_v_p => Vp_Vn_0_v_p
+      Vp_Vn_0_v_p => Vp_Vn_0_v_p,
+      clk_out1_0 => clk_out1_0,
+      inverted_out => inverted_out,
+      noise_out => noise_out,
+      reset_0 => reset_0
     );
 end STRUCTURE;

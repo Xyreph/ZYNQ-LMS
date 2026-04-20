@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x48B50625C7F03B6D",
+      "boundary_crc": "0xC4ED5492EF2DFF26",
       "device": "xc7z007sclg400-1",
       "gen_directory": "../../../../ZYNQ.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -13,17 +13,21 @@
     "design_tree": {
       "processing_system7_0": "",
       "xadc_wiz_0": "",
-      "clk_wiz_0": "",
+      "clk_wiz_100MHz": "",
       "axi_dma_0": "",
       "axis_subset_converter_0": "",
       "axi_smc": "",
-      "rst_clk_wiz_0_104M": "",
+      "rst_clk_wiz_0_100M": "",
       "axi_mem_intercon": {
         "s00_couplers": {
           "auto_pc": "",
           "auto_us": ""
         }
-      }
+      },
+      "dds_compiler_0": "",
+      "DAC_SigmaDelta_1": "",
+      "SinePhaseInverter_0": "",
+      "DAC_SigmaDelta_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -226,6 +230,53 @@
             "direction": "I"
           }
         }
+      }
+    },
+    "ports": {
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_out1_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_100MHz_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "noise_out": {
+        "direction": "O"
+      },
+      "inverted_out": {
+        "direction": "O"
       }
     },
     "components": {
@@ -1373,7 +1424,7 @@
             "value": "1000"
           },
           "DCLK_FREQUENCY": {
-            "value": "104"
+            "value": "100"
           },
           "ENABLE_AXI4STREAM": {
             "value": "true"
@@ -1410,28 +1461,28 @@
           }
         }
       },
-      "clk_wiz_0": {
+      "clk_wiz_100MHz": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "ip_revision": "17",
         "xci_name": "design_1_clk_wiz_0_0",
         "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
-        "inst_hier_path": "clk_wiz_0",
+        "inst_hier_path": "clk_wiz_100MHz",
         "has_run_ip_tcl": "true",
         "parameters": {
           "CLKOUT1_JITTER": {
-            "value": "162.098"
+            "value": "162.035"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "160.484"
+            "value": "164.985"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "104.000"
+            "value": "100.000"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "19.500"
+            "value": "20.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "9.375"
+            "value": "10.000"
           }
         }
       },
@@ -1678,12 +1729,12 @@
           }
         }
       },
-      "rst_clk_wiz_0_104M": {
+      "rst_clk_wiz_0_100M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "ip_revision": "17",
         "xci_name": "design_1_rst_clk_wiz_0_104M_0",
         "xci_path": "ip\\design_1_rst_clk_wiz_0_104M_0\\design_1_rst_clk_wiz_0_104M_0.xci",
-        "inst_hier_path": "rst_clk_wiz_0_104M",
+        "inst_hier_path": "rst_clk_wiz_0_100M",
         "has_run_ip_tcl": "true"
       },
       "axi_mem_intercon": {
@@ -1993,6 +2044,58 @@
             ]
           }
         }
+      },
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "28",
+        "xci_name": "design_1_dds_compiler_0_0",
+        "xci_path": "ip\\design_1_dds_compiler_0_0\\design_1_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Phase_Increment": {
+            "value": "Fixed"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "DAC_SigmaDelta_1": {
+        "vlnv": "xilinx.com:user:DAC_SigmaDelta:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_DAC_SigmaDelta_1_0",
+        "xci_path": "ip\\design_1_DAC_SigmaDelta_1_0\\design_1_DAC_SigmaDelta_1_0.xci",
+        "inst_hier_path": "DAC_SigmaDelta_1",
+        "has_run_ip_tcl": "true"
+      },
+      "SinePhaseInverter_0": {
+        "vlnv": "xilinx.com:user:SinePhaseInverter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_SinePhaseInverter_0_2",
+        "xci_path": "ip\\design_1_SinePhaseInverter_0_2\\design_1_SinePhaseInverter_0_2.xci",
+        "inst_hier_path": "SinePhaseInverter_0",
+        "has_run_ip_tcl": "true"
+      },
+      "DAC_SigmaDelta_0": {
+        "vlnv": "xilinx.com:user:DAC_SigmaDelta:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_DAC_SigmaDelta_0_1",
+        "xci_path": "ip\\design_1_DAC_SigmaDelta_0_1\\design_1_DAC_SigmaDelta_0_1.xci",
+        "inst_hier_path": "DAC_SigmaDelta_0",
+        "has_run_ip_tcl": "true"
       }
     },
     "interface_nets": {
@@ -2058,44 +2161,79 @@
       }
     },
     "nets": {
-      "clk_wiz_0_clk_out1": {
+      "DAC_SigmaDelta_0_sd_out": {
         "ports": [
-          "clk_wiz_0/clk_out1",
+          "DAC_SigmaDelta_0/sd_out",
+          "inverted_out"
+        ]
+      },
+      "DAC_SigmaDelta_1_sd_out": {
+        "ports": [
+          "DAC_SigmaDelta_1/sd_out",
+          "noise_out"
+        ]
+      },
+      "SinePhaseInverter_0_data_out": {
+        "ports": [
+          "SinePhaseInverter_0/data_out",
+          "DAC_SigmaDelta_0/data_in"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_100MHz/locked",
+          "rst_clk_wiz_0_100M/dcm_locked"
+        ]
+      },
+      "clk_wiz_100MHz_clk_out1": {
+        "ports": [
+          "clk_wiz_100MHz/clk_out1",
+          "clk_out1_0",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "processing_system7_0/S_AXI_HP0_ACLK",
           "axi_dma_0/s_axi_lite_aclk",
           "axi_dma_0/m_axi_s2mm_aclk",
           "axis_subset_converter_0/aclk",
           "xadc_wiz_0/s_axis_aclk",
           "xadc_wiz_0/s_axi_aclk",
-          "processing_system7_0/M_AXI_GP0_ACLK",
           "axi_smc/aclk",
-          "rst_clk_wiz_0_104M/slowest_sync_clk",
+          "axi_mem_intercon/ACLK",
           "axi_mem_intercon/S00_ACLK",
-          "processing_system7_0/S_AXI_HP0_ACLK",
           "axi_mem_intercon/M00_ACLK",
-          "axi_mem_intercon/ACLK"
+          "dds_compiler_0/aclk",
+          "rst_clk_wiz_0_100M/slowest_sync_clk",
+          "DAC_SigmaDelta_1/clk",
+          "SinePhaseInverter_0/clk",
+          "DAC_SigmaDelta_0/clk"
         ]
       },
-      "clk_wiz_0_locked": {
+      "dds_compiler_0_m_axis_data_tdata": {
         "ports": [
-          "clk_wiz_0/locked",
-          "rst_clk_wiz_0_104M/dcm_locked"
+          "dds_compiler_0/m_axis_data_tdata",
+          "DAC_SigmaDelta_1/data_in"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "clk_wiz_0/clk_in1"
+          "clk_wiz_100MHz/clk_in1"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
-          "rst_clk_wiz_0_104M/ext_reset_in"
+          "rst_clk_wiz_0_100M/ext_reset_in"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "clk_wiz_100MHz/reset"
         ]
       },
       "rst_clk_wiz_0_104M_peripheral_aresetn": {
         "ports": [
-          "rst_clk_wiz_0_104M/peripheral_aresetn",
+          "rst_clk_wiz_0_100M/peripheral_aresetn",
           "axi_dma_0/axi_resetn",
           "axi_smc/aresetn",
           "xadc_wiz_0/s_axi_aresetn",
@@ -2103,6 +2241,18 @@
           "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/ARESETN",
           "axis_subset_converter_0/aresetn"
+        ]
+      },
+      "xadc_wiz_0_m_axis_tdata": {
+        "ports": [
+          "xadc_wiz_0/m_axis_tdata",
+          "SinePhaseInverter_0/data_in"
+        ]
+      },
+      "xadc_wiz_0_m_axis_tvalid": {
+        "ports": [
+          "xadc_wiz_0/m_axis_tvalid",
+          "SinePhaseInverter_0/data_valid"
         ]
       }
     },

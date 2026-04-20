@@ -3,22 +3,22 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Mar  4 14:16:39 2026
-# Process ID         : 13520
-# Current directory  : C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/impl_1
+# Start of session at: Mon Apr 20 13:25:03 2026
+# Process ID         : 12344
+# Current directory  : D:/VHDl/ZYNQ/ZYNQ.runs/impl_1
 # Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file           : C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/impl_1/design_1_wrapper.vdi
-# Journal file       : C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/impl_1\vivado.jou
-# Running On         : BLACK
+# Log file           : D:/VHDl/ZYNQ/ZYNQ.runs/impl_1/design_1_wrapper.vdi
+# Journal file       : D:/VHDl/ZYNQ/ZYNQ.runs/impl_1\vivado.jou
+# Running On         : Parvis
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
-# Processor Detail   : AMD Ryzen 7 5700X3D 8-Core Processor           
-# CPU Frequency      : 3000 MHz
+# Processor Detail   : AMD Ryzen 7 3700X 8-Core Processor             
+# CPU Frequency      : 3600 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
-# Host memory        : 34281 MB
+# Host memory        : 34280 MB
 # Swap memory        : 33554 MB
-# Total Virtual      : 67836 MB
-# Available Virtual  : 40707 MB
+# Total Virtual      : 67834 MB
+# Available Virtual  : 48871 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

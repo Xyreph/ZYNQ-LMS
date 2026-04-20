@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
--- Date        : Wed Mar  4 12:30:06 2026
--- Host        : BLACK running 64-bit major release  (build 9200)
+-- Date        : Mon Apr 20 13:22:48 2026
+-- Host        : Parvis running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0_stub.vhdl
+--               d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0_stub.vhdl
 -- Design      : design_1_rst_clk_wiz_0_104M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z007sclg400-1
@@ -45,7 +45,7 @@ architecture stub of design_1_rst_clk_wiz_0_104M_0 is
   attribute x_interface_mode : string;
   attribute x_interface_mode of slowest_sync_clk : signal is "slave clock";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 104000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_100MHz_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of ext_reset_in : signal is "xilinx.com:signal:reset:1.0 ext_reset RST";
   attribute x_interface_mode of ext_reset_in : signal is "slave ext_reset";
   attribute x_interface_parameter of ext_reset_in : signal is "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW, INSERT_VIP 0";

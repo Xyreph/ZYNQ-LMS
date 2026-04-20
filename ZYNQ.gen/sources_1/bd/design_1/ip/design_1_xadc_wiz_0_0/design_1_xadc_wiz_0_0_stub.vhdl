@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
--- Date        : Wed Mar  4 12:29:17 2026
--- Host        : BLACK running 64-bit major release  (build 9200)
+-- Date        : Mon Apr 20 13:22:57 2026
+-- Host        : Parvis running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_stub.vhdl
+--               d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_stub.vhdl
 -- Design      : design_1_xadc_wiz_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z007sclg400-1
@@ -51,7 +51,7 @@ entity design_1_xadc_wiz_0_0 is
   );
 
   attribute core_generation_info : string;
-  attribute core_generation_info of design_1_xadc_wiz_0_0 : entity is "design_1_xadc_wiz_0_0,xadc_wiz_v3_3_13,{component_name=design_1_xadc_wiz_0_0,enable_axi=true,enable_axi4stream=true,dclk_frequency=104,enable_busy=true,enable_convst=false,enable_convstclk=false,enable_dclk=true,enable_drp=false,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=false,enable_Vccaux_alaram=falseenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=false,user_temp_alaram=false,timing_mode=continuous,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute core_generation_info of design_1_xadc_wiz_0_0 : entity is "design_1_xadc_wiz_0_0,xadc_wiz_v3_3_13,{component_name=design_1_xadc_wiz_0_0,enable_axi=true,enable_axi4stream=true,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=false,enable_dclk=true,enable_drp=false,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=false,enable_Vccaux_alaram=falseenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=false,user_temp_alaram=false,timing_mode=continuous,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 end design_1_xadc_wiz_0_0;
 
 architecture stub of design_1_xadc_wiz_0_0 is

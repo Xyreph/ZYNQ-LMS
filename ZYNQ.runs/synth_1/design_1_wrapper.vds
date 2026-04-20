@@ -3,32 +3,33 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Mar  4 14:07:58 2026
-# Process ID         : 1680
-# Current directory  : C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1
+# Start of session at: Mon Apr 20 13:24:02 2026
+# Process ID         : 19432
+# Current directory  : D:/VHDl/ZYNQ/ZYNQ.runs/synth_1
 # Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file           : C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/design_1_wrapper.vds
-# Journal file       : C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1\vivado.jou
-# Running On         : BLACK
+# Log file           : D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/design_1_wrapper.vds
+# Journal file       : D:/VHDl/ZYNQ/ZYNQ.runs/synth_1\vivado.jou
+# Running On         : Parvis
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
-# Processor Detail   : AMD Ryzen 7 5700X3D 8-Core Processor           
-# CPU Frequency      : 3000 MHz
+# Processor Detail   : AMD Ryzen 7 3700X 8-Core Processor             
+# CPU Frequency      : 3600 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
-# Host memory        : 34281 MB
+# Host memory        : 34280 MB
 # Swap memory        : 33554 MB
-# Total Virtual      : 67836 MB
-# Available Virtual  : 41241 MB
+# Total Virtual      : 67834 MB
+# Available Virtual  : 48876 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 527.664 ; gain = 220.516
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 524.977 ; gain = 217.938
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDESIGNTOOLS/2025.2/Vivado/data/ip'.
-WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
-Command: read_checkpoint -auto_incremental -incremental C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VHDl/IP/DAC_SigmaDelta'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VHDl/SinePhaseInverter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-12246] XCI file 'd:/VHDl/ZYNQ/ZYNQ.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+Command: read_checkpoint -auto_incremental -incremental D:/VHDl/ZYNQ/ZYNQ.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/VHDl/ZYNQ/ZYNQ.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xc7z007sclg400-1
 Starting synth_design
@@ -39,110 +40,126 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3736
+INFO: [Synth 8-7075] Helper process launched with PID 7360
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1340.879 ; gain = 541.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1337.488 ; gain = 540.949
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:344' bound to instance 'design_1_i' of component 'design_1' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:376]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:536]
-INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_dma_0_0_stub.vhdl:6' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:875]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_dma_0_0_stub.vhdl:61]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:296]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
-INFO: [Synth 8-3491] module 'design_1_axi_mem_intercon_imp_auto_pc_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_axi_mem_intercon_imp_auto_pc_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl:57]
-INFO: [Synth 8-3491] module 'design_1_axi_mem_intercon_imp_auto_us_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl:6' bound to instance 'auto_us' of component 'design_1_axi_mem_intercon_imp_auto_us_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:205]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl:56]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:296]
-INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:963]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axi_smc_0_stub.vhdl:96]
-INFO: [Synth 8-3491] module 'design_1_axis_subset_converter_0_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axis_subset_converter_0_0_stub.vhdl:6' bound to instance 'axis_subset_converter_0' of component 'design_1_axis_subset_converter_0_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1044]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_subset_converter_0_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_axis_subset_converter_0_0_stub.vhdl:29]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1058]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_clk_wiz_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1065]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_processing_system7_0_0_stub.vhdl:128]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_104M_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_rst_clk_wiz_0_104M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_0_104M' of component 'design_1_rst_clk_wiz_0_104M_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1178]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_104M_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_rst_clk_wiz_0_104M_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_xadc_wiz_0_0_stub.vhdl:6' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1191]
-INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-1680-BLACK/realtime/design_1_xadc_wiz_0_0_stub.vhdl:47]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:376]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:47]
+INFO: [Synth 8-3491] module 'design_1' declared at 'd:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:344' bound to instance 'design_1_i' of component 'design_1' [D:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'design_1' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:380]
+INFO: [Synth 8-3491] module 'design_1_DAC_SigmaDelta_0_1' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_DAC_SigmaDelta_0_1_stub.vhdl:6' bound to instance 'DAC_SigmaDelta_0' of component 'design_1_DAC_SigmaDelta_0_1' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:920]
+INFO: [Synth 8-638] synthesizing module 'design_1_DAC_SigmaDelta_0_1' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_DAC_SigmaDelta_0_1_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_DAC_SigmaDelta_1_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_DAC_SigmaDelta_1_0_stub.vhdl:6' bound to instance 'DAC_SigmaDelta_1' of component 'design_1_DAC_SigmaDelta_1_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:926]
+INFO: [Synth 8-638] synthesizing module 'design_1_DAC_SigmaDelta_1_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_DAC_SigmaDelta_1_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_SinePhaseInverter_0_2' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_SinePhaseInverter_0_2_stub.vhdl:6' bound to instance 'SinePhaseInverter_0' of component 'design_1_SinePhaseInverter_0_2' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:932]
+INFO: [Synth 8-638] synthesizing module 'design_1_SinePhaseInverter_0_2' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_SinePhaseInverter_0_2_stub.vhdl:24]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:540]
+INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_dma_0_0_stub.vhdl:6' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:939]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_dma_0_0_stub.vhdl:61]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:296]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
+INFO: [Synth 8-3491] module 'design_1_axi_mem_intercon_imp_auto_pc_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_axi_mem_intercon_imp_auto_pc_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.vhdl:57]
+INFO: [Synth 8-3491] module 'design_1_axi_mem_intercon_imp_auto_us_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl:6' bound to instance 'auto_us' of component 'design_1_axi_mem_intercon_imp_auto_us_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_mem_intercon_imp_auto_us_0_stub.vhdl:56]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:296]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1027]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axi_smc_0_stub.vhdl:96]
+INFO: [Synth 8-3491] module 'design_1_axis_subset_converter_0_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axis_subset_converter_0_0_stub.vhdl:6' bound to instance 'axis_subset_converter_0' of component 'design_1_axis_subset_converter_0_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1108]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_subset_converter_0_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_axis_subset_converter_0_0_stub.vhdl:29]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_100MHz' of component 'design_1_clk_wiz_0_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1122]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_clk_wiz_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_dds_compiler_0_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_dds_compiler_0_0_stub.vhdl:6' bound to instance 'dds_compiler_0' of component 'design_1_dds_compiler_0_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1129]
+INFO: [Synth 8-638] synthesizing module 'design_1_dds_compiler_0_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_dds_compiler_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1137]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_processing_system7_0_0_stub.vhdl:128]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_104M_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_rst_clk_wiz_0_104M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_104M_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1250]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_104M_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_rst_clk_wiz_0_104M_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_xadc_wiz_0_0_stub.vhdl:6' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:1263]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/.Xil/Vivado-19432-Parvis/realtime/design_1_xadc_wiz_0_0_stub.vhdl:47]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/synth/design_1.vhd:380]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [D:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:47]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_7HNO1D is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_7HNO1D is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1469.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1467.516 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_0'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_0'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_104M'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_104M'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
-Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
-Parsing XDC File [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.srcs/constrs_1/new/V_Pins.xdc]
-Finished Parsing XDC File [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.srcs/constrs_1/new/V_Pins.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.srcs/constrs_1/new/V_Pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_100MHz'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_100MHz'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_0'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0/design_1_rst_clk_wiz_0_104M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_in_context.xdc] for cell 'design_1_i/dds_compiler_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_in_context.xdc] for cell 'design_1_i/dds_compiler_0'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_DAC_SigmaDelta_1_0/design_1_DAC_SigmaDelta_1_0/design_1_DAC_SigmaDelta_1_0_in_context.xdc] for cell 'design_1_i/DAC_SigmaDelta_1'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_DAC_SigmaDelta_1_0/design_1_DAC_SigmaDelta_1_0/design_1_DAC_SigmaDelta_1_0_in_context.xdc] for cell 'design_1_i/DAC_SigmaDelta_1'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_SinePhaseInverter_0_2/design_1_SinePhaseInverter_0_2/design_1_SinePhaseInverter_0_2_in_context.xdc] for cell 'design_1_i/SinePhaseInverter_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_SinePhaseInverter_0_2/design_1_SinePhaseInverter_0_2/design_1_SinePhaseInverter_0_2_in_context.xdc] for cell 'design_1_i/SinePhaseInverter_0'
+Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_DAC_SigmaDelta_0_1/design_1_DAC_SigmaDelta_0_1/design_1_DAC_SigmaDelta_1_0_in_context.xdc] for cell 'design_1_i/DAC_SigmaDelta_0'
+Finished Parsing XDC File [d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/ip/design_1_DAC_SigmaDelta_0_1/design_1_DAC_SigmaDelta_0_1/design_1_DAC_SigmaDelta_1_0_in_context.xdc] for cell 'design_1_i/DAC_SigmaDelta_0'
+Parsing XDC File [D:/VHDl/ZYNQ/ZYNQ.srcs/constrs_1/new/V_Pins.xdc]
+Finished Parsing XDC File [D:/VHDl/ZYNQ/ZYNQ.srcs/constrs_1/new/V_Pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/VHDl/ZYNQ/ZYNQ.srcs/constrs_1/new/V_Pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1469.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1467.516 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1469.680 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1467.516 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1469.680 ; gain = 670.496
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -168,25 +185,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module design_1_axi_mem_intercon_0 is ei
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1477.426 ; gain = 678.242
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1467.516 ; gain = 670.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1646.547 ; gain = 847.363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1641.871 ; gain = 845.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1647.180 ; gain = 847.996
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1642.504 ; gain = 845.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1657.371 ; gain = 858.188
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1653.266 ; gain = 856.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -204,37 +221,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -246,50 +263,59 @@ Report BlackBoxes:
 +------+----------------------------------------+----------+
 |1     |design_1_axi_mem_intercon_imp_auto_pc_0 |         1|
 |2     |design_1_axi_mem_intercon_imp_auto_us_0 |         1|
-|3     |design_1_axi_dma_0_0                    |         1|
-|4     |design_1_axi_smc_0                      |         1|
-|5     |design_1_axis_subset_converter_0_0      |         1|
-|6     |design_1_clk_wiz_0_0                    |         1|
-|7     |design_1_processing_system7_0_0         |         1|
-|8     |design_1_rst_clk_wiz_0_104M_0           |         1|
-|9     |design_1_xadc_wiz_0_0                   |         1|
+|3     |design_1_DAC_SigmaDelta_0_1             |         1|
+|4     |design_1_DAC_SigmaDelta_1_0             |         1|
+|5     |design_1_SinePhaseInverter_0_2          |         1|
+|6     |design_1_axi_dma_0_0                    |         1|
+|7     |design_1_axi_smc_0                      |         1|
+|8     |design_1_axis_subset_converter_0_0      |         1|
+|9     |design_1_clk_wiz_0_0                    |         1|
+|10    |design_1_dds_compiler_0_0               |         1|
+|11    |design_1_processing_system7_0_0         |         1|
+|12    |design_1_rst_clk_wiz_0_104M_0           |         1|
+|13    |design_1_xadc_wiz_0_0                   |         1|
 +------+----------------------------------------+----------+
 
 Report Cell Usage: 
 +------+---------------------------------------------+------+
 |      |Cell                                         |Count |
 +------+---------------------------------------------+------+
-|1     |design_1_axi_dma_0_0_bbox                    |     1|
-|2     |design_1_axi_mem_intercon_imp_auto_pc_0_bbox |     1|
-|3     |design_1_axi_mem_intercon_imp_auto_us_0_bbox |     1|
-|4     |design_1_axi_smc_0_bbox                      |     1|
-|5     |design_1_axis_subset_converter_0_0_bbox      |     1|
-|6     |design_1_clk_wiz_0_0_bbox                    |     1|
-|7     |design_1_processing_system7_0_0_bbox         |     1|
-|8     |design_1_rst_clk_wiz_0_104M_0_bbox           |     1|
-|9     |design_1_xadc_wiz_0_0_bbox                   |     1|
-|10    |IBUF                                         |     2|
+|1     |design_1_DAC_SigmaDelta_0_1_bbox             |     1|
+|2     |design_1_DAC_SigmaDelta_1_0_bbox             |     1|
+|3     |design_1_SinePhaseInverter_0_2_bbox          |     1|
+|4     |design_1_axi_dma_0_0_bbox                    |     1|
+|5     |design_1_axi_mem_intercon_imp_auto_pc_0_bbox |     1|
+|6     |design_1_axi_mem_intercon_imp_auto_us_0_bbox |     1|
+|7     |design_1_axi_smc_0_bbox                      |     1|
+|8     |design_1_axis_subset_converter_0_0_bbox      |     1|
+|9     |design_1_clk_wiz_0_0_bbox                    |     1|
+|10    |design_1_dds_compiler_0_0_bbox               |     1|
+|11    |design_1_processing_system7_0_0_bbox         |     1|
+|12    |design_1_rst_clk_wiz_0_104M_0_bbox           |     1|
+|13    |design_1_xadc_wiz_0_0_bbox                   |     1|
+|14    |IBUF                                         |     3|
+|15    |OBUF                                         |     3|
 +------+---------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1905.848 ; gain = 1106.664
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1905.848 ; gain = 1106.664
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1901.555 ; gain = 1105.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1901.555 ; gain = 1105.016
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1914.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1902.191 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1905.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: a43360e5
+Synth Design complete | Checksum: d2da38f1
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1918.617 ; gain = 1332.164
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1918.617 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.runs/synth_1/design_1_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1905.887 ; gain = 1321.238
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1905.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/VHDl/ZYNQ/ZYNQ.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 14:08:45 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 13:24:56 2026...

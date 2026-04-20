@@ -43,3 +43,5 @@ comp.run(operation="SYNTHESIS")
 
 comp.run(operation="PACKAGE")
 
+vitis.dispose()
+

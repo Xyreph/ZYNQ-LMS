@@ -1,0 +1,22 @@
+
+*** Running vivado
+    with args -log design_1_DAC_SigmaDelta_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_DAC_SigmaDelta_0_1.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Apr 20 13:22:50 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_DAC_SigmaDelta_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 524.078 ; gain = 219.969
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VHDl/IP/DAC_SigmaDelta'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VHDl/SinePhaseInverter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_DAC_SigmaDelta_0_1, cache-ID = 21a4baff70f58ea6.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 13:23:06 2026...

@@ -98,7 +98,15 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   input wire Vp_Vn_0_v_n,
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire Vp_Vn_0_v_p
+  input wire Vp_Vn_0_v_p,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire reset_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire clk_out1_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire noise_out,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire inverted_out
 );
 
   design_1 inst (
@@ -124,7 +132,11 @@ module design_1_sv (
     .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
     .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
     .Vp_Vn_0_v_n(Vp_Vn_0_v_n),
-    .Vp_Vn_0_v_p(Vp_Vn_0_v_p)
+    .Vp_Vn_0_v_p(Vp_Vn_0_v_p),
+    .reset_0(reset_0),
+    .clk_out1_0(clk_out1_0),
+    .noise_out(noise_out),
+    .inverted_out(inverted_out)
   );
 
 endmodule

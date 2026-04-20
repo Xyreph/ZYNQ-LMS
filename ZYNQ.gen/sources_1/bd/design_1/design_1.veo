@@ -76,7 +76,11 @@ design_1 your_instance_name (
   .FIXED_IO_ps_clk(FIXED_IO_ps_clk), // inout wire FIXED_IO_ps_clk
   .FIXED_IO_ps_porb(FIXED_IO_ps_porb), // inout wire FIXED_IO_ps_porb
   .Vp_Vn_0_v_n(Vp_Vn_0_v_n), // input wire Vp_Vn_0_v_n
-  .Vp_Vn_0_v_p(Vp_Vn_0_v_p) // input wire Vp_Vn_0_v_p
+  .Vp_Vn_0_v_p(Vp_Vn_0_v_p), // input wire Vp_Vn_0_v_p
+  .reset_0(reset_0), // input wire reset_0
+  .clk_out1_0(clk_out1_0), // output wire clk_out1_0
+  .noise_out(noise_out), // output wire noise_out
+  .inverted_out(inverted_out) // output wire inverted_out
 );
 // INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

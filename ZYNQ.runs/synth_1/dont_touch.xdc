@@ -30,10 +30,22 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_dds_compiler_0_0 || ORIG_REF_NAME==design_1_dds_compiler_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_DAC_SigmaDelta_1_0/design_1_DAC_SigmaDelta_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_DAC_SigmaDelta_1_0 || ORIG_REF_NAME==design_1_DAC_SigmaDelta_1_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_SinePhaseInverter_0_2/design_1_SinePhaseInverter_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_SinePhaseInverter_0_2 || ORIG_REF_NAME==design_1_SinePhaseInverter_0_2} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_DAC_SigmaDelta_0_1/design_1_DAC_SigmaDelta_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_DAC_SigmaDelta_0_1 || ORIG_REF_NAME==design_1_DAC_SigmaDelta_0_1} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0} -quiet] -quiet
 
-# XDC: c:/Users/doppy/Documents/Multi_Disciplinary/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: d:/VHDl/ZYNQ/ZYNQ.gen/sources_1/bd/design_1/design_1_ooc.xdc

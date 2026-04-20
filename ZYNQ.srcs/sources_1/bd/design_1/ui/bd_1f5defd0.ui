@@ -1,42 +1,58 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.09844",
-   "Default View_TopLeft":"-114,-625",
+   "Default View_ScaleFactor":"0.698651",
+   "Default View_TopLeft":"-129,-654",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 6 -x 1780 -y -370 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 6 -x 1780 -y -340 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2410 -y -370 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2410 -y -340 -defaultsOSRD
 preplace port Vp_Vn_0 -pg 1 -lvl 0 -x -20 -y -290 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1190 -y -320 -defaultsOSRD
-preplace inst xadc_wiz_0 -pg 1 -lvl 1 -x 160 -y -270 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 800 -y -60 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -x 800 -y -310 -defaultsOSRD
-preplace inst axis_subset_converter_0 -pg 1 -lvl 2 -x 470 -y -310 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 5 -x 1580 -y -310 -defaultsOSRD
-preplace inst rst_clk_wiz_0_104M -pg 1 -lvl 4 -x 1190 -y -90 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 5 -x 1580 -y -120 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 0 5 20 -410 320 -390 630 -410 970 -200 1430
+preplace port port-id_reset_0 -pg 1 -lvl 0 -x -20 -y -70 -defaultsOSRD
+preplace port port-id_clk_out1_0 -pg 1 -lvl 7 -x 2410 -y -70 -defaultsOSRD
+preplace port port-id_noise_out -pg 1 -lvl 7 -x 2410 -y 160 -defaultsOSRD
+preplace port port-id_inverted_out -pg 1 -lvl 7 -x 2410 -y 320 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1490 -y -320 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -x 180 -y -230 -defaultsOSRD
+preplace inst clk_wiz_100MHz -pg 1 -lvl 3 -x 900 -y -60 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 900 -y -310 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 2 -x 530 -y -310 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 6 -x 2200 -y -310 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 4 -x 1490 -y -90 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 6 -x 2200 -y -120 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 4 -x 1490 -y 180 -defaultsOSRD
+preplace inst DAC_SigmaDelta_1 -pg 1 -lvl 5 -x 1880 -y 160 -defaultsOSRD
+preplace inst SinePhaseInverter_0 -pg 1 -lvl 4 -x 1490 -y 330 -defaultsOSRD
+preplace inst DAC_SigmaDelta_0 -pg 1 -lvl 5 -x 1880 -y 320 -defaultsOSRD
+preplace netloc DAC_SigmaDelta_0_sd_out 1 5 2 NJ 320 NJ
+preplace netloc DAC_SigmaDelta_1_sd_out 1 5 2 N 160 N
+preplace netloc SinePhaseInverter_0_data_out 1 4 1 N 330
 preplace netloc clk_wiz_0_locked 1 3 1 N -50
-preplace netloc processing_system7_0_FCLK_CLK0 1 2 3 640 20 NJ 20 1410
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 2 980 10 1400
-preplace netloc rst_clk_wiz_0_104M_peripheral_aresetn 1 0 5 30 -400 300J -230 640 -210 NJ -210 1440
-preplace netloc Vp_Vn_0_1 1 0 1 N -290
-preplace netloc axi_dma_0_M_AXI_S2MM 1 3 2 960J -190 1420
-preplace netloc axi_mem_intercon_M00_AXI 1 3 3 980 -450 NJ -450 1740
-preplace netloc axi_smc_M00_AXI 1 2 4 640 -440 NJ -440 NJ -440 1720
-preplace netloc axi_smc_M01_AXI 1 0 6 10 -430 NJ -430 NJ -430 NJ -430 NJ -430 1730
-preplace netloc axis_subset_converter_0_M_AXIS 1 2 1 620 -330n
-preplace netloc processing_system7_0_DDR 1 4 2 1400J -400 1760
-preplace netloc processing_system7_0_FIXED_IO 1 4 2 1430J -390 1750
-preplace netloc processing_system7_0_M_AXI_GP0 1 4 1 1400 -330n
-preplace netloc xadc_wiz_0_M_AXIS 1 1 1 310 -340n
-levelinfo -pg 1 -20 160 470 800 1190 1580 1780
-pagesize -pg 1 -db -bbox -sgen -780 -460 1890 770
+preplace netloc clk_wiz_100MHz_clk_out1 1 0 7 10 -390 340 -390 720 -410 1220J 90 1750J 90 2040 0 2390J
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 4 1 1770 170n
+preplace netloc processing_system7_0_FCLK_CLK0 1 2 3 730 -190 NJ -190 1720
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 2 1260 -430 1730
+preplace netloc reset_0_1 1 0 3 NJ -70 NJ -70 NJ
+preplace netloc rst_clk_wiz_0_104M_peripheral_aresetn 1 0 6 30 -380 370J -400 700 -480 NJ -480 1740 -60 2050
+preplace netloc xadc_wiz_0_m_axis_tdata 1 1 3 330J -430 NJ -430 1240
+preplace netloc xadc_wiz_0_m_axis_tvalid 1 1 3 350J -420 NJ -420 1070
+preplace netloc Vp_Vn_0_1 1 0 1 0 -290n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 3 1230J -450 N -450 2010
+preplace netloc axi_mem_intercon_M00_AXI 1 3 4 1250 -440 NJ -440 N -440 2350
+preplace netloc axi_smc_M00_AXI 1 2 5 730 -470 NJ -470 NJ -470 N -470 2360
+preplace netloc axi_smc_M01_AXI 1 0 7 20 -460 NJ -460 NJ -460 NJ -460 NJ -460 N -460 2370
+preplace netloc axis_subset_converter_0_M_AXIS 1 2 1 710 -330n
+preplace netloc processing_system7_0_DDR 1 4 3 NJ -370 2000 -390 2380
+preplace netloc processing_system7_0_FIXED_IO 1 4 3 1750J -380 1990 -400 2390
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 2 1750 -330 N
+preplace netloc xadc_wiz_0_M_AXIS 1 1 1 360 -330n
+levelinfo -pg 1 -20 180 530 900 1490 1880 2200 2410
+pagesize -pg 1 -db -bbox -sgen -780 -610 2710 770
 "
 }
 {
    "da_axi4_cnt":"3",
    "da_board_cnt":"3",
+   "da_clkrst_cnt":"8",
    "da_ps7_cnt":"1"
 }
