@@ -50020,7 +50020,8 @@ typedef ap_axiu<32,0,0,0> axis32_t;
 __attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(
     hls::stream<axis8_t> &x_in,
     hls::stream<axis8_t> &d_in,
-    hls::stream<axis32_t> &e_out
+    hls::stream<axis32_t> &e_out,
+    hls::stream<axis32_t> &y_out
 );
 # 7 "../lms_filter.cpp" 2
 # 1 "C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\\ap_int.h" 1
@@ -50187,7 +50188,7 @@ namespace std
 }
 # 11 "../lms_filter.cpp" 2
 
-__attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(hls::stream<axis8_t> &x_in, hls::stream<axis8_t> &d_in, hls::stream<axis32_t> &e_out){
+__attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(hls::stream<axis8_t> &x_in, hls::stream<axis8_t> &d_in, hls::stream<axis32_t> &e_out, hls::stream<axis32_t> &y_out){
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=lms_filter
 # 12 "../lms_filter.cpp"
@@ -50195,6 +50196,7 @@ __attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(hls::stream<axis8_t
 #pragma HLS INTERFACE axis port=x_in
 #pragma HLS INTERFACE axis port=d_in
 #pragma HLS INTERFACE axis port=e_out
+#pragma HLS INTERFACE axis port=y_out
 #pragma HLS INTERFACE ap_ctrl_none port=return
 
     static float weights[16];
@@ -50211,7 +50213,7 @@ __attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(hls::stream<axis8_t
         float d = (float)((int)pkt_d.data -128)/128.0f;
 
 
-        VITIS_LOOP_32_1: for(int i = 16 -1; i > 0; i--){
+        VITIS_LOOP_33_1: for(int i = 16 -1; i > 0; i--){
 #pragma HLS UNROLL factor=1
             x_buf[i] = x_buf[i-1];
         }
@@ -50219,7 +50221,7 @@ __attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(hls::stream<axis8_t
 
 
         float y= 0.0f;
-        VITIS_LOOP_40_2: for (int i = 0; i < 16; i++){
+        VITIS_LOOP_41_2: for (int i = 0; i < 16; i++){
 #pragma HLS PIPELINE II=1
             y += weights[i] * x_buf[i];
         }
@@ -50227,19 +50229,26 @@ __attribute__((sdx_kernel("lms_filter", 0))) void lms_filter(hls::stream<axis8_t
 
         float e = d - y;
 
-        VITIS_LOOP_48_3: for (int i = 0; i < 16; i++) {
+        VITIS_LOOP_49_3: for (int i = 0; i < 16; i++) {
 #pragma HLS PIPELINE II=1
             weights[i] += 0.01f * e * x_buf[i];
         }
 
 
 
-        uint32_t bits;
-        std::memcpy(&bits, &e, sizeof(bits));
-        axis32_t pkt_out;
-        pkt_out.data = bits;
-        pkt_out.last= pkt_x.last | pkt_d.last;
-        e_out.write(pkt_out);
+        uint32_t eBits;
+        std::memcpy(&eBits, &e, sizeof(eBits));
+        axis32_t e_pkt_out;
+        e_pkt_out.data = eBits;
+        e_pkt_out.last= pkt_x.last | pkt_d.last;
+        e_out.write(e_pkt_out);
+
+        uint32_t yBits;
+        std::memcpy(&yBits, &y, sizeof(yBits));
+        axis32_t y_pkt_out;
+        y_pkt_out.data = yBits;
+        y_pkt_out.last= e_pkt_out.last;
+        y_out.write(y_pkt_out);
 
     }
 }

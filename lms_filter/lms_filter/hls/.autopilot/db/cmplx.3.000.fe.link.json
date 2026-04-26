@@ -6,17 +6,17 @@
     "def_use_depth": 4,
     "file": "lms_filter.cpp",
     "fileloc": 12,
-    "instructions": 138,
+    "instructions": 177,
     "loads": {
       "G": 5,
-      "L": 4
+      "L": 9
     },
-    "memory_accesses": 8,
+    "memory_accesses": 10,
     "name": "lms_filter",
     "stores": {
       "G": 3,
-      "L": 3
+      "L": 7
     },
-    "total_instructions": 671
+    "total_instructions": 863
   }
 }

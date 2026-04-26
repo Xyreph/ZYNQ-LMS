@@ -8,7 +8,7 @@
 #include <hls_stream.h>
 #include <ap_axi_sdata.h>
 
-typedef ap_axiu<8,0,0,0> axis8_t;
+typedef ap_axiu<16,0,0,0> axis16_t;
 typedef ap_axiu<32,0,0,0> axis32_t;
 
 /*struct axis8_t{                 // assign axis8_t to a struct to read
@@ -23,11 +23,14 @@ struct axis32_t{                 // assign axis8_t to a struct to read
 
 #define N_TAPS 16
 #define MU     0.01f
+#define SEC_TAPS 16
+
 
 void lms_filter(
-    hls::stream<axis8_t> &x_in,
-    hls::stream<axis8_t> &d_in,
-    hls::stream<axis32_t> &e_out
+    hls::stream<axis16_t> &x_in,
+    hls::stream<axis16_t> &d_in,
+    hls::stream<axis32_t> &e_out,
+    hls::stream<axis32_t> &y_out
 );
 
 #endif

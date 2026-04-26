@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.2 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sun Apr  5 15:19:50 2026</td></tr>
+<tr><td><b>Date</b></td><td>Sun Apr 26 14:51:15 2026</td></tr>
 <tr><td><b>Host</b></td><td>Parvis running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\VHDl\ZYNQ\lms_filter\hls_config.cfg --work_dir lms_filter </td></tr>
 </table></center><br>
@@ -3434,29 +3434,24 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">6</td>
+<td align="left">9</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.lms_filter.Kernel</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.lms_filter.Kernel</td>
-<td align="left">The critical path in module 'lms_filter_Pipeline_VITIS_LOOP_40_2' consists of the following:
-	'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a>) [25]  (22.578 ns)
-	'store' operation ('y_write_ln39', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=39">lms_filter.cpp</a>) of variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a> 32 bit on local variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=39">lms_filter.cpp</a> [27]  (1.588 ns)
-	'load' operation 32 bit ('y_load', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a>) on local variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=39">lms_filter.cpp</a> [15]  (0.000 ns)
-	'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a>) [25]  (22.578 ns)
-
+<td align="left">Cannot meet target clock period in 'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) (combination delay: 22.578 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_41_2''.
 </td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.lms_filter.Throughput</td>
-<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3466,28 +3461,8 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.lms_filter.Kernel</td>
-<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a>) to 'store' operation ('y_write_ln39', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=39">lms_filter.cpp</a>) of variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a> 32 bit on local variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=39">lms_filter.cpp</a> (combination delay: 24.166 ns) to honor II or Latency constraint in region 'VITIS_LOOP_40_2'.
+<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) to 'store' operation ('add255_write_ln43', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) of variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a> 32 bit on local variable 'add255' (combination delay: 24.166 ns) to honor II or Latency constraint in region 'VITIS_LOOP_41_2'.
 </td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.lms_filter.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.lms_filter.Kernel</td>
-<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3501,7 +3476,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">4</td>
+<td align="left">1</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3521,13 +3496,38 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">2</td>
+<td align="left">5</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.lms_filter.Kernel</td>
-<td align="left">Cannot meet target clock period in 'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=42">lms_filter.cpp</a>) (combination delay: 22.578 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_40_2''.
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.lms_filter.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.lms_filter.Kernel</td>
+<td align="left">The critical path in module 'lms_filter_Pipeline_VITIS_LOOP_41_2' consists of the following:
+	'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) [25]  (22.578 ns)
+	'store' operation ('add255_write_ln43', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) of variable 'y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a> 32 bit on local variable 'add255' [27]  (1.588 ns)
+	'load' operation 32 bit ('add255_load', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) on local variable 'add255' [15]  (0.000 ns)
+	'fadd' operation 32 bit ('y', <a href="file:///D:/VHDl/ZYNQ/lms_filter\../lms_filter.cpp#line=43">lms_filter.cpp</a>) [25]  (22.578 ns)
+
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

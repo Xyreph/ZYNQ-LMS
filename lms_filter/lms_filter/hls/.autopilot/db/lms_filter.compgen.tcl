@@ -259,6 +259,82 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 33 \
+    name y_out_V_data_V \
+    reset_level 0 \
+    sync_rst true \
+    corename {y_out} \
+    metadata {  } \
+    op interface \
+    ports { y_out_TDATA { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'y_out_V_data_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 34 \
+    name y_out_V_keep_V \
+    reset_level 0 \
+    sync_rst true \
+    corename {y_out} \
+    metadata {  } \
+    op interface \
+    ports { y_out_TKEEP { O 4 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'y_out_V_keep_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 35 \
+    name y_out_V_strb_V \
+    reset_level 0 \
+    sync_rst true \
+    corename {y_out} \
+    metadata {  } \
+    op interface \
+    ports { y_out_TSTRB { O 4 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'y_out_V_strb_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 36 \
+    name y_out_V_last_V \
+    reset_level 0 \
+    sync_rst true \
+    corename {y_out} \
+    metadata {  } \
+    op interface \
+    ports { y_out_TVALID { O 1 bit } y_out_TREADY { I 1 bit } y_out_TLAST { O 1 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'y_out_V_last_V'"
+}
+}
+
+
 
 # Adapter definition:
 set PortName ap_clk
@@ -306,6 +382,26 @@ if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_end
     cg_default_interface_gen_bundle_end
     AESL_LIB_XILADAPTER::native_axis_end
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler lms_filter_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler lms_filter_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler lms_filter_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler lms_filter_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
 }
 
 

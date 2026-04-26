@@ -5,7 +5,7 @@
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1776687691"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1776687691"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1776687691"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1776687691"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1777209524"/>
     <Generation Name="INSTANTIATION_TEMPLATE" State="GENERATED" Timestamp="1776687691"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\design_1.vhd" Type="VHDL">

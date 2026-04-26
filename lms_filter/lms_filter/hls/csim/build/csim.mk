@@ -94,6 +94,6 @@ $(ObjDir)/lms_filter_tb.o: ../../../../../lms_filter_tb.cpp $(ObjDir)/.dir csim.
 
 $(ObjDir)/lms_filter.o: ../../../../../lms_filter.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../../lms_filter.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel= $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=lms_filter $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/lms_filter.d

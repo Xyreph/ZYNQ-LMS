@@ -32,6 +32,10 @@ set C_modelArgList {
 	{ e_out_V_keep_V int 4 regular {axi_s 1 volatile  { e_out Keep } }  }
 	{ e_out_V_strb_V int 4 regular {axi_s 1 volatile  { e_out Strb } }  }
 	{ e_out_V_last_V int 1 regular {axi_s 1 volatile  { e_out Last } }  }
+	{ y_out_V_data_V int 32 regular {axi_s 1 volatile  { y_out Data } }  }
+	{ y_out_V_keep_V int 4 regular {axi_s 1 volatile  { y_out Keep } }  }
+	{ y_out_V_strb_V int 4 regular {axi_s 1 volatile  { y_out Strb } }  }
+	{ y_out_V_last_V int 1 regular {axi_s 1 volatile  { y_out Last } }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -48,9 +52,13 @@ set C_modelArgMapList {[
  	{ "Name" : "e_out_V_data_V", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "e_out_V_keep_V", "interface" : "axis", "bitwidth" : 4, "direction" : "WRITEONLY"} , 
  	{ "Name" : "e_out_V_strb_V", "interface" : "axis", "bitwidth" : 4, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "e_out_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "e_out_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "y_out_V_data_V", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "y_out_V_keep_V", "interface" : "axis", "bitwidth" : 4, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "y_out_V_strb_V", "interface" : "axis", "bitwidth" : 4, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "y_out_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 20
+set portNum 26
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
@@ -72,6 +80,12 @@ set portList {
 	{ e_out_TKEEP sc_out sc_lv 4 signal 9 } 
 	{ e_out_TSTRB sc_out sc_lv 4 signal 10 } 
 	{ e_out_TLAST sc_out sc_lv 1 signal 11 } 
+	{ y_out_TDATA sc_out sc_lv 32 signal 12 } 
+	{ y_out_TVALID sc_out sc_logic 1 outvld 15 } 
+	{ y_out_TREADY sc_in sc_logic 1 outacc 15 } 
+	{ y_out_TKEEP sc_out sc_lv 4 signal 13 } 
+	{ y_out_TSTRB sc_out sc_lv 4 signal 14 } 
+	{ y_out_TLAST sc_out sc_lv 1 signal 15 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -93,7 +107,13 @@ set NewPortList {[
  	{ "name": "e_out_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "e_out_V_last_V", "role": "default" }} , 
  	{ "name": "e_out_TKEEP", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "e_out_V_keep_V", "role": "default" }} , 
  	{ "name": "e_out_TSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "e_out_V_strb_V", "role": "default" }} , 
- 	{ "name": "e_out_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "e_out_V_last_V", "role": "default" }}  ]}
+ 	{ "name": "e_out_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "e_out_V_last_V", "role": "default" }} , 
+ 	{ "name": "y_out_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y_out_V_data_V", "role": "default" }} , 
+ 	{ "name": "y_out_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "y_out_V_last_V", "role": "default" }} , 
+ 	{ "name": "y_out_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "y_out_V_last_V", "role": "default" }} , 
+ 	{ "name": "y_out_TKEEP", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "y_out_V_keep_V", "role": "default" }} , 
+ 	{ "name": "y_out_TSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "y_out_V_strb_V", "role": "default" }} , 
+ 	{ "name": "y_out_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "y_out_V_last_V", "role": "default" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	lms_filter {
@@ -109,15 +129,19 @@ set ArgLastReadFirstWriteLatency {
 		e_out_V_keep_V {Type O LastRead -1 FirstWrite 19}
 		e_out_V_strb_V {Type O LastRead -1 FirstWrite 19}
 		e_out_V_last_V {Type O LastRead -1 FirstWrite 19}
+		y_out_V_data_V {Type O LastRead -1 FirstWrite 19}
+		y_out_V_keep_V {Type O LastRead -1 FirstWrite 19}
+		y_out_V_strb_V {Type O LastRead -1 FirstWrite 19}
+		y_out_V_last_V {Type O LastRead -1 FirstWrite 19}
 		x_buf {Type IO LastRead -1 FirstWrite -1}
 		weights {Type IO LastRead -1 FirstWrite -1}}
-	lms_filter_Pipeline_VITIS_LOOP_32_1 {
+	lms_filter_Pipeline_VITIS_LOOP_33_1 {
 		x_buf {Type IO LastRead 0 FirstWrite 1}}
-	lms_filter_Pipeline_VITIS_LOOP_40_2 {
-		y_out {Type O LastRead -1 FirstWrite 5}
+	lms_filter_Pipeline_VITIS_LOOP_41_2 {
+		add255_out {Type O LastRead -1 FirstWrite 5}
 		weights {Type I LastRead 0 FirstWrite -1}
 		x_buf {Type I LastRead 0 FirstWrite -1}}
-	lms_filter_Pipeline_VITIS_LOOP_48_3 {
+	lms_filter_Pipeline_VITIS_LOOP_49_3 {
 		mul1 {Type I LastRead 0 FirstWrite -1}
 		x_buf {Type I LastRead 0 FirstWrite -1}
 		weights {Type IO LastRead 4 FirstWrite 11}}}
@@ -145,6 +169,10 @@ set Spec2ImplPortList {
 	e_out_V_keep_V { axis {  { e_out_TKEEP out_data 1 4 } } }
 	e_out_V_strb_V { axis {  { e_out_TSTRB out_data 1 4 } } }
 	e_out_V_last_V { axis {  { e_out_TVALID out_vld 1 1 }  { e_out_TREADY out_acc 0 1 }  { e_out_TLAST out_data 1 1 } } }
+	y_out_V_data_V { axis {  { y_out_TDATA out_data 1 32 } } }
+	y_out_V_keep_V { axis {  { y_out_TKEEP out_data 1 4 } } }
+	y_out_V_strb_V { axis {  { y_out_TSTRB out_data 1 4 } } }
+	y_out_V_last_V { axis {  { y_out_TVALID out_vld 1 1 }  { y_out_TREADY out_acc 0 1 }  { y_out_TLAST out_data 1 1 } } }
 }
 
 set maxi_interface_dict [dict create]

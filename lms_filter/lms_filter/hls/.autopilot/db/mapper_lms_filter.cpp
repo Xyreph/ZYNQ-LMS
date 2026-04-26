@@ -266,9 +266,17 @@ unsigned int ap_apatb_e_out_V_strb_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_e_out_V_strb_V_V_size_Reader("../tv/stream_size/stream_size_out_e_out_V_strb_V.dat");
 unsigned int ap_apatb_e_out_V_last_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_e_out_V_last_V_V_size_Reader("../tv/stream_size/stream_size_out_e_out_V_last_V.dat");
+unsigned int ap_apatb_y_out_V_data_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_y_out_V_data_V_V_size_Reader("../tv/stream_size/stream_size_out_y_out_V_data_V.dat");
+unsigned int ap_apatb_y_out_V_keep_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_y_out_V_keep_V_V_size_Reader("../tv/stream_size/stream_size_out_y_out_V_keep_V.dat");
+unsigned int ap_apatb_y_out_V_strb_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_y_out_V_strb_V_V_size_Reader("../tv/stream_size/stream_size_out_y_out_V_strb_V.dat");
+unsigned int ap_apatb_y_out_V_last_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_y_out_V_last_V_V_size_Reader("../tv/stream_size/stream_size_out_y_out_V_last_V.dat");
 using hls::sim::Byte;
-extern "C" void lms_filter(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
-extern "C" void apatb_lms_filter_hw(volatile void * __xlx_apatb_param_x_in_V_data_V, volatile void * __xlx_apatb_param_x_in_V_keep_V, volatile void * __xlx_apatb_param_x_in_V_strb_V, volatile void * __xlx_apatb_param_x_in_V_last_V, volatile void * __xlx_apatb_param_d_in_V_data_V, volatile void * __xlx_apatb_param_d_in_V_keep_V, volatile void * __xlx_apatb_param_d_in_V_strb_V, volatile void * __xlx_apatb_param_d_in_V_last_V, volatile void * __xlx_apatb_param_e_out_V_data_V, volatile void * __xlx_apatb_param_e_out_V_keep_V, volatile void * __xlx_apatb_param_e_out_V_strb_V, volatile void * __xlx_apatb_param_e_out_V_last_V) {
+extern "C" void lms_filter(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
+extern "C" void apatb_lms_filter_hw(volatile void * __xlx_apatb_param_x_in_V_data_V, volatile void * __xlx_apatb_param_x_in_V_keep_V, volatile void * __xlx_apatb_param_x_in_V_strb_V, volatile void * __xlx_apatb_param_x_in_V_last_V, volatile void * __xlx_apatb_param_d_in_V_data_V, volatile void * __xlx_apatb_param_d_in_V_keep_V, volatile void * __xlx_apatb_param_d_in_V_strb_V, volatile void * __xlx_apatb_param_d_in_V_last_V, volatile void * __xlx_apatb_param_e_out_V_data_V, volatile void * __xlx_apatb_param_e_out_V_keep_V, volatile void * __xlx_apatb_param_e_out_V_strb_V, volatile void * __xlx_apatb_param_e_out_V_last_V, volatile void * __xlx_apatb_param_y_out_V_data_V, volatile void * __xlx_apatb_param_y_out_V_keep_V, volatile void * __xlx_apatb_param_y_out_V_strb_V, volatile void * __xlx_apatb_param_y_out_V_last_V) {
 using hls::sim::createStream;
 auto* sx_in_V_data_V = createStream((hls::stream<char>*)__xlx_apatb_param_x_in_V_data_V);
 auto* sx_in_V_keep_V = createStream((hls::stream<char>*)__xlx_apatb_param_x_in_V_keep_V);
@@ -294,8 +302,24 @@ auto* se_out_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_param_e_out
   ap_apatb_e_out_V_last_V_cap_bc = __xlx_e_out_V_last_V_V_size_Reader.read_size();
   char* __xlx_e_out_V_last_V_input_buffer= new char[ap_apatb_e_out_V_last_V_cap_bc];
 auto* se_out_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_e_out_V_last_V);
+  //Create input buffer for y_out_V_data_V
+  ap_apatb_y_out_V_data_V_cap_bc = __xlx_y_out_V_data_V_V_size_Reader.read_size();
+  int* __xlx_y_out_V_data_V_input_buffer= new int[ap_apatb_y_out_V_data_V_cap_bc];
+auto* sy_out_V_data_V = createStream((hls::stream<int>*)__xlx_apatb_param_y_out_V_data_V);
+  //Create input buffer for y_out_V_keep_V
+  ap_apatb_y_out_V_keep_V_cap_bc = __xlx_y_out_V_keep_V_V_size_Reader.read_size();
+  char* __xlx_y_out_V_keep_V_input_buffer= new char[ap_apatb_y_out_V_keep_V_cap_bc];
+auto* sy_out_V_keep_V = createStream((hls::stream<char>*)__xlx_apatb_param_y_out_V_keep_V);
+  //Create input buffer for y_out_V_strb_V
+  ap_apatb_y_out_V_strb_V_cap_bc = __xlx_y_out_V_strb_V_V_size_Reader.read_size();
+  char* __xlx_y_out_V_strb_V_input_buffer= new char[ap_apatb_y_out_V_strb_V_cap_bc];
+auto* sy_out_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_param_y_out_V_strb_V);
+  //Create input buffer for y_out_V_last_V
+  ap_apatb_y_out_V_last_V_cap_bc = __xlx_y_out_V_last_V_V_size_Reader.read_size();
+  char* __xlx_y_out_V_last_V_input_buffer= new char[ap_apatb_y_out_V_last_V_cap_bc];
+auto* sy_out_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_y_out_V_last_V);
   // DUT call
-  lms_filter(sx_in_V_data_V->data<char>(), sx_in_V_keep_V->data<char>(), sx_in_V_strb_V->data<char>(), sx_in_V_last_V->data<char>(), sd_in_V_data_V->data<char>(), sd_in_V_keep_V->data<char>(), sd_in_V_strb_V->data<char>(), sd_in_V_last_V->data<char>(), se_out_V_data_V->data<int>(), se_out_V_keep_V->data<char>(), se_out_V_strb_V->data<char>(), se_out_V_last_V->data<char>());
+  lms_filter(sx_in_V_data_V->data<char>(), sx_in_V_keep_V->data<char>(), sx_in_V_strb_V->data<char>(), sx_in_V_last_V->data<char>(), sd_in_V_data_V->data<char>(), sd_in_V_keep_V->data<char>(), sd_in_V_strb_V->data<char>(), sd_in_V_last_V->data<char>(), se_out_V_data_V->data<int>(), se_out_V_keep_V->data<char>(), se_out_V_strb_V->data<char>(), se_out_V_last_V->data<char>(), sy_out_V_data_V->data<int>(), sy_out_V_keep_V->data<char>(), sy_out_V_strb_V->data<char>(), sy_out_V_last_V->data<char>());
 sx_in_V_data_V->transfer((hls::stream<char>*)__xlx_apatb_param_x_in_V_data_V);
 sx_in_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_x_in_V_keep_V);
 sx_in_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_x_in_V_strb_V);
@@ -308,4 +332,8 @@ se_out_V_data_V->transfer((hls::stream<int>*)__xlx_apatb_param_e_out_V_data_V);
 se_out_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_e_out_V_keep_V);
 se_out_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_e_out_V_strb_V);
 se_out_V_last_V->transfer((hls::stream<char>*)__xlx_apatb_param_e_out_V_last_V);
+sy_out_V_data_V->transfer((hls::stream<int>*)__xlx_apatb_param_y_out_V_data_V);
+sy_out_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_y_out_V_keep_V);
+sy_out_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_y_out_V_strb_V);
+sy_out_V_last_V->transfer((hls::stream<char>*)__xlx_apatb_param_y_out_V_last_V);
 }

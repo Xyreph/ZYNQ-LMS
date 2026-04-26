@@ -1420,6 +1420,9 @@
         "inst_hier_path": "xadc_wiz_0",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "ACQUISITION_TIME": {
+            "value": "4"
+          },
           "ADC_CONVERSION_RATE": {
             "value": "1000"
           },
@@ -1445,6 +1448,9 @@
             "value": "VP_VN"
           },
           "OT_ALARM": {
+            "value": "false"
+          },
+          "SINGLE_CHANNEL_ACQUISITION_TIME": {
             "value": "false"
           },
           "SINGLE_CHANNEL_SELECTION": {

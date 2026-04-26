@@ -19,4 +19,5 @@ obj/lms_filter.o: ..\..\..\..\..\lms_filter.cpp \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_ref.h \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_special.h \
   C:\AMDDesignTools\2025.2\Vitis\include\hls_stream.h \
-  C:\AMDDesignTools\2025.2\Vitis\include\etc\hls_stream_common.h
+  C:\AMDDesignTools\2025.2\Vitis\include\etc\hls_stream_common.h \
+  C:\AMDDesignTools\2025.2\Vitis\include\ap_axi_sdata.h

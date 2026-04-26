@@ -5,22 +5,22 @@
 <ModuleName>lms_filter</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_lms_filter_Pipeline_VITIS_LOOP_32_1_fu_170</InstName>
-<ModuleName>lms_filter_Pipeline_VITIS_LOOP_32_1</ModuleName>
+<InstName>grp_lms_filter_Pipeline_VITIS_LOOP_33_1_fu_198</InstName>
+<ModuleName>lms_filter_Pipeline_VITIS_LOOP_33_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>170</ID>
+<ID>198</ID>
 </Instance>
 <Instance>
-<InstName>grp_lms_filter_Pipeline_VITIS_LOOP_40_2_fu_176</InstName>
-<ModuleName>lms_filter_Pipeline_VITIS_LOOP_40_2</ModuleName>
+<InstName>grp_lms_filter_Pipeline_VITIS_LOOP_41_2_fu_204</InstName>
+<ModuleName>lms_filter_Pipeline_VITIS_LOOP_41_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>176</ID>
+<ID>204</ID>
 </Instance>
 <Instance>
-<InstName>grp_lms_filter_Pipeline_VITIS_LOOP_48_3_fu_185</InstName>
-<ModuleName>lms_filter_Pipeline_VITIS_LOOP_48_3</ModuleName>
+<InstName>grp_lms_filter_Pipeline_VITIS_LOOP_49_3_fu_213</InstName>
+<ModuleName>lms_filter_Pipeline_VITIS_LOOP_49_3</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>185</ID>
+<ID>213</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -28,9 +28,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>lms_filter_Pipeline_VITIS_LOOP_32_1</Name>
+<Name>lms_filter_Pipeline_VITIS_LOOP_33_1</Name>
 <Loops>
-<VITIS_LOOP_32_1></VITIS_LOOP_32_1>
+<VITIS_LOOP_33_1></VITIS_LOOP_33_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -50,8 +50,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_32_1>
-<Name>VITIS_LOOP_32_1</Name>
+<VITIS_LOOP_33_1>
+<Name>VITIS_LOOP_33_1</Name>
 <Slack>7.30</Slack>
 <TripCount>15</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -63,19 +63,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_32_1>
+</VITIS_LOOP_33_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../lms_filter.cpp:32</SourceLocation>
+<SourceLocation>../lms_filter.cpp:33</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_32_1>
-<Name>VITIS_LOOP_32_1</Name>
+<VITIS_LOOP_33_1>
+<Name>VITIS_LOOP_33_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../lms_filter.cpp:34</SourceLocation>
-</VITIS_LOOP_32_1>
+<SourceLocation>../lms_filter.cpp:35</SourceLocation>
+</VITIS_LOOP_33_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -101,7 +101,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_32_1</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -112,7 +112,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_32_1</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -123,7 +123,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_32_1</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -134,7 +134,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_32_1</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -145,7 +145,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_32_1</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -156,7 +156,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_32_1</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_33_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -245,9 +245,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>lms_filter_Pipeline_VITIS_LOOP_40_2</Name>
+<Name>lms_filter_Pipeline_VITIS_LOOP_41_2</Name>
 <Loops>
-<VITIS_LOOP_40_2></VITIS_LOOP_40_2>
+<VITIS_LOOP_41_2></VITIS_LOOP_41_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -267,8 +267,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_40_2>
-<Name>VITIS_LOOP_40_2</Name>
+<VITIS_LOOP_41_2>
+<Name>VITIS_LOOP_41_2</Name>
 <Slack>7.30</Slack>
 <TripCount>16</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -280,19 +280,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_40_2>
+</VITIS_LOOP_41_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../lms_filter.cpp:39</SourceLocation>
+<SourceLocation>../lms_filter.cpp:41</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_40_2>
-<Name>VITIS_LOOP_40_2</Name>
+<VITIS_LOOP_41_2>
+<Name>VITIS_LOOP_41_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../lms_filter.cpp:40</SourceLocation>
-</VITIS_LOOP_40_2>
+<SourceLocation>../lms_filter.cpp:41</SourceLocation>
+</VITIS_LOOP_41_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -318,7 +318,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -329,7 +329,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -340,7 +340,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -351,7 +351,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -362,7 +362,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -373,7 +373,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -383,8 +383,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_379_p_din0</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<name>grp_fu_417_p_din0</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -394,8 +394,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_379_p_din1</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<name>grp_fu_417_p_din1</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -405,8 +405,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_379_p_dout0</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<name>grp_fu_417_p_dout0</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -416,8 +416,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_379_p_ce</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_40_2</Object>
+<name>grp_fu_417_p_ce</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_41_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -427,8 +427,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>y_out</name>
-<Object>y_out</Object>
+<name>add255_out</name>
+<Object>add255_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -438,8 +438,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>y_out_ap_vld</name>
-<Object>y_out</Object>
+<name>add255_out_ap_vld</name>
+<Object>add255_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -517,9 +517,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>lms_filter_Pipeline_VITIS_LOOP_48_3</Name>
+<Name>lms_filter_Pipeline_VITIS_LOOP_49_3</Name>
 <Loops>
-<VITIS_LOOP_48_3></VITIS_LOOP_48_3>
+<VITIS_LOOP_49_3></VITIS_LOOP_49_3>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -539,8 +539,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_48_3>
-<Name>VITIS_LOOP_48_3</Name>
+<VITIS_LOOP_49_3>
+<Name>VITIS_LOOP_49_3</Name>
 <Slack>7.30</Slack>
 <TripCount>16</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -552,19 +552,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_48_3>
+</VITIS_LOOP_49_3>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../lms_filter.cpp:48</SourceLocation>
+<SourceLocation>../lms_filter.cpp:49</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_48_3>
-<Name>VITIS_LOOP_48_3</Name>
+<VITIS_LOOP_49_3>
+<Name>VITIS_LOOP_49_3</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../lms_filter.cpp:48</SourceLocation>
-</VITIS_LOOP_48_3>
+<SourceLocation>../lms_filter.cpp:49</SourceLocation>
+</VITIS_LOOP_49_3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -590,7 +590,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -601,7 +601,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -612,7 +612,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -623,7 +623,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -634,7 +634,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -645,7 +645,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -655,8 +655,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_194_p_din0</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<name>grp_fu_222_p_din0</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -666,8 +666,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_194_p_din1</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<name>grp_fu_222_p_din1</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -677,30 +677,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_194_p_opcode</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_194_p_dout0</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_194_p_ce</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<name>grp_fu_222_p_opcode</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -710,30 +688,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_379_p_din0</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_379_p_din1</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_379_p_dout0</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<name>grp_fu_222_p_dout0</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -743,8 +699,52 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_379_p_ce</name>
-<Object>lms_filter_Pipeline_VITIS_LOOP_48_3</Object>
+<name>grp_fu_222_p_ce</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_417_p_din0</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_417_p_din1</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_417_p_dout0</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_417_p_ce</name>
+<Object>lms_filter_Pipeline_VITIS_LOOP_49_3</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -912,7 +912,7 @@
 <FF>1354</FF>
 <AVAIL_FF>28800</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
-<LUT>2127</LUT>
+<LUT>2140</LUT>
 <AVAIL_LUT>14400</AVAIL_LUT>
 <UTIL_LUT>14</UTIL_LUT>
 <URAM>0</URAM>
@@ -1150,6 +1150,78 @@
 <RtlPorts>
 <name>e_out_TSTRB</name>
 <Object>e_out_V_strb_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>4</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>y_out_TDATA</name>
+<Object>y_out_V_data_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>y_out_TVALID</name>
+<Object>y_out_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>y_out_TREADY</name>
+<Object>y_out_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>y_out_TLAST</name>
+<Object>y_out_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>y_out_TKEEP</name>
+<Object>y_out_V_keep_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>4</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>y_out_TSTRB</name>
+<Object>y_out_V_strb_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>

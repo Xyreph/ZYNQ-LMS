@@ -19,4 +19,5 @@ obj/lms_filter_tb.o: ..\..\..\..\..\lms_filter_tb.cpp \
   C:\AMDDesignTools\2025.2\Vitis\include\ap_fixed.h \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_base.h \
   C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_ref.h \
-  C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_special.h
+  C:\AMDDesignTools\2025.2\Vitis\include\etc\ap_fixed_special.h \
+  C:\AMDDesignTools\2025.2\Vitis\include\ap_axi_sdata.h

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lms_filter'" level="0">
-<item name = "Date">Sun Apr  5 15:19:46 2026
+<item name = "Date">Sun Apr 26 14:51:11 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">lms_filter</item>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_lms_filter_Pipeline_VITIS_LOOP_32_1_fu_170">lms_filter_Pipeline_VITIS_LOOP_32_1, 17, 17, 0.170 us, 0.170 us, 0, 0, loop pipeline stp</column>
-<column name="grp_lms_filter_Pipeline_VITIS_LOOP_40_2_fu_176">lms_filter_Pipeline_VITIS_LOOP_40_2, 23, 23, 1.075 us, 1.075 us, 0, 0, loop pipeline stp</column>
-<column name="grp_lms_filter_Pipeline_VITIS_LOOP_48_3_fu_185">lms_filter_Pipeline_VITIS_LOOP_48_3, 28, 28, 0.280 us, 0.280 us, 0, 0, loop pipeline stp</column>
+<column name="grp_lms_filter_Pipeline_VITIS_LOOP_33_1_fu_198">lms_filter_Pipeline_VITIS_LOOP_33_1, 17, 17, 0.170 us, 0.170 us, 0, 0, loop pipeline stp</column>
+<column name="grp_lms_filter_Pipeline_VITIS_LOOP_41_2_fu_204">lms_filter_Pipeline_VITIS_LOOP_41_2, 23, 23, 1.075 us, 1.075 us, 0, 0, loop pipeline stp</column>
+<column name="grp_lms_filter_Pipeline_VITIS_LOOP_49_3_fu_213">lms_filter_Pipeline_VITIS_LOOP_49_3, 28, 28, 0.280 us, 0.280 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -9,24 +9,26 @@
 #include <cstdint>
 #include <cstring>
 
-void lms_filter(hls::stream<axis8_t> &x_in, hls::stream<axis8_t> &d_in, hls::stream<axis32_t> &e_out){
+void lms_filter(hls::stream<axis16_t> &x_in, hls::stream<axis16_t> &d_in, hls::stream<axis32_t> &e_out, hls::stream<axis32_t> &y_out){
     #pragma HLS INTERFACE axis port=x_in
     #pragma HLS INTERFACE axis port=d_in 
     #pragma HLS INTERFACE axis port=e_out 
+    #pragma HLS INTERFACE axis port=y_out
     #pragma HLS INTERFACE ap_ctrl_none port=return
 
     static float weights[N_TAPS];
     static float x_buf[N_TAPS];
+    static float x_filt_buf[N_TAPS];
 
     #pragma HLS PIPELINE II=1
     
     if(!x_in.empty() && !d_in.empty()){     // Read data if both channels are not empty
-        axis8_t pkt_x = x_in.read();
-        axis8_t pkt_d = d_in.read();
+        axis16_t pkt_x = x_in.read();
+        axis16_t pkt_d = d_in.read();
 
         // Convert unsigned digital sine values to float values
-        float x = (float)((int)pkt_x.data  -128)/128.0f;
-        float d = (float)((int)pkt_d.data  -128)/128.0f;
+        float x = (float)((int)pkt_x.data  -2048)/2048.0f;
+        float d = (float)((int)pkt_d.data  -2048)/2048.0f;
         
         // shift buffer and load new x value in
         for(int i = N_TAPS -1; i > 0; i--){
@@ -52,12 +54,19 @@ void lms_filter(hls::stream<axis8_t> &x_in, hls::stream<axis8_t> &d_in, hls::str
 
         // pack float e into 32 bit output signal
                    
-        uint32_t bits;
-        std::memcpy(&bits, &e, sizeof(bits));           // writes the raw bit values of e to unsigned var bits
-        axis32_t pkt_out;
-        pkt_out.data = bits;                            
-        pkt_out.last= pkt_x.last | pkt_d.last;          // sets the tlast signal to high if either signal has given the tlast flag
-        e_out.write(pkt_out);                           // pushes 32 bit float and tlast to the axis interface
+        uint32_t eBits;
+        std::memcpy(&eBits, &e, sizeof(eBits));           // writes the raw bit values of e to unsigned var bits
+        axis32_t e_pkt_out;
+        e_pkt_out.data = eBits;                            
+        e_pkt_out.last= pkt_x.last | pkt_d.last;          // sets the tlast signal to high if either signal has given the tlast flag
+        e_out.write(e_pkt_out);                           // pushes 32 bit float and tlast to the axis interface
+
+        uint32_t yBits;
+        std::memcpy(&yBits, &y, sizeof(yBits));           // writes the raw bit values of e to unsigned var bits
+        axis32_t y_pkt_out;
+        y_pkt_out.data = yBits;                            
+        y_pkt_out.last= e_pkt_out.last;        // sets the tlast signal to high if either signal has given the tlast flag
+        y_out.write(y_pkt_out);                           // pushes 32 bit float and tlast to the axis interface
         
     }
 }

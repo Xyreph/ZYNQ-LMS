@@ -20,5 +20,11 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("e_out_TKEEP", 4, hls_out, 9, "axis", "out_data", 1),
 	Port_Property("e_out_TSTRB", 4, hls_out, 10, "axis", "out_data", 1),
 	Port_Property("e_out_TLAST", 1, hls_out, 11, "axis", "out_data", 1),
+	Port_Property("y_out_TDATA", 32, hls_out, 12, "axis", "out_data", 1),
+	Port_Property("y_out_TVALID", 1, hls_out, 15, "axis", "out_vld", 1),
+	Port_Property("y_out_TREADY", 1, hls_in, 15, "axis", "out_acc", 1),
+	Port_Property("y_out_TKEEP", 4, hls_out, 13, "axis", "out_data", 1),
+	Port_Property("y_out_TSTRB", 4, hls_out, 14, "axis", "out_data", 1),
+	Port_Property("y_out_TLAST", 1, hls_out, 15, "axis", "out_data", 1),
 };
 const char* HLS_Design_Meta::dut_name = "lms_filter";

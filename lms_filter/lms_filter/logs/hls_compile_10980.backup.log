@@ -1,0 +1,188 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir D:/VHDl/ZYNQ/lms_filter/lms_filter 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/VHDl/ZYNQ/lms_filter/lms_filter/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/VHDl/ZYNQ/lms_filter/lms_filter'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../lms_filter.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/VHDl/ZYNQ/lms_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../lms_filter.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/VHDl/ZYNQ/lms_filter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../lms_filter_tb.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/VHDl/ZYNQ/lms_filter_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=lms_filter' from hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z007sclg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/VHDl/ZYNQ/lms_filter/lms_filter/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.536 seconds; current allocated memory: 135.953 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../lms_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.452 seconds; current allocated memory: 138.504 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 922 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 337 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 272 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 249 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 292 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 288 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 242 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 185 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 185 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 159 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 121 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 214-275] In loop 'VITIS_LOOP_33_1'(../lms_filter.cpp:33:26), pragma conflict between UNROLL off (../lms_filter.cpp:34:1) and PIPELINE (../lms_filter.cpp:22:1) as a pipelined region cannot contain loops that are not fully unrolled. Ignoring PIPELINE to honor UNROLL off (../lms_filter.cpp:33:26)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'lms_filter(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../lms_filter.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'lms_filter(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../lms_filter.cpp:12:0)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_33_1> at ../lms_filter.cpp:33:26 due to pipeline_loops threshold
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'y_out' (../lms_filter.cpp:12:0)
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.302 seconds; current allocated memory: 140.348 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 140.348 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 145.270 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 146.969 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 168.570 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 188.895 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'lms_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lms_filter_Pipeline_VITIS_LOOP_33_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_33_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_33_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 192.688 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lms_filter_Pipeline_VITIS_LOOP_41_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_41_2'.
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('y', ../lms_filter.cpp:43) (combination delay: 22.578 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_41_2''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'fadd' operation 32 bit ('y', ../lms_filter.cpp:43) to 'store' operation ('add279_write_ln43', ../lms_filter.cpp:43) of variable 'y', ../lms_filter.cpp:43 32 bit on local variable 'add279' (combination delay: 24.166 ns) to honor II or Latency constraint in region 'VITIS_LOOP_41_2'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_41_2'
+WARNING: [HLS 200-871] Estimated clock period (46.744 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'lms_filter_Pipeline_VITIS_LOOP_41_2' consists of the following:
+	'fadd' operation 32 bit ('y', ../lms_filter.cpp:43) [25]  (22.578 ns)
+	'store' operation ('add279_write_ln43', ../lms_filter.cpp:43) of variable 'y', ../lms_filter.cpp:43 32 bit on local variable 'add279' [27]  (1.588 ns)
+	'load' operation 32 bit ('add279_load', ../lms_filter.cpp:43) on local variable 'add279' [15]  (0.000 ns)
+	'fadd' operation 32 bit ('y', ../lms_filter.cpp:43) [25]  (22.578 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.468 seconds; current allocated memory: 193.926 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 193.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lms_filter_Pipeline_VITIS_LOOP_49_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_49_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'VITIS_LOOP_49_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 193.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 193.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lms_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 193.996 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 194.129 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lms_filter_Pipeline_VITIS_LOOP_33_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lms_filter_Pipeline_VITIS_LOOP_33_1' pipeline 'VITIS_LOOP_33_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lms_filter_Pipeline_VITIS_LOOP_33_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 195.637 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lms_filter_Pipeline_VITIS_LOOP_41_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lms_filter_Pipeline_VITIS_LOOP_41_2' pipeline 'VITIS_LOOP_41_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lms_filter_Pipeline_VITIS_LOOP_41_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.838 seconds; current allocated memory: 196.914 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lms_filter_Pipeline_VITIS_LOOP_49_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lms_filter_Pipeline_VITIS_LOOP_49_3' pipeline 'VITIS_LOOP_49_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lms_filter_Pipeline_VITIS_LOOP_49_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.149 seconds; current allocated memory: 197.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lms_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/x_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/x_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/x_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/x_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/d_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/d_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/d_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/d_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/e_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/e_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/e_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/e_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'lms_filter/y_out' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'lms_filter' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Port 'lms_filter/y_out_TDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'lms_filter/y_out_TVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'lms_filter/y_out_TREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32s_32_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lms_filter'.
+INFO: [RTMG 210-278] Implementing memory 'lms_filter_x_buf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.953 seconds; current allocated memory: 199.918 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.639 seconds; current allocated memory: 204.398 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file D:/VHDl/ZYNQ/lms_filter/lms_filter/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.124 seconds; current allocated memory: 206.961 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for lms_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for lms_filter.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 21.39 MHz
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 33.225 seconds; peak allocated memory: 207.020 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 37s
